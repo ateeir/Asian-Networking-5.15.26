@@ -124,6 +124,17 @@ const BREAKOUT_THEMES = [
     subtopics: ['Community Hub', 'Next Meetup', 'Feedback'],
     color: 'bg-brand-yellow text-black',
     tag: '8:45 PM FINAL'
+  },
+  {
+    id: 'weekendclub',
+    title: 'The Weekend Club',
+    icon: '✨',
+    description: 'Continue the conversation! meet up in the future.',
+    details: 'The conversation doesn\'t have to end here. The Weekend Club app is launching in New York on 5/30. Join to keep meeting awesome people!',
+    groups: ['NYC Launch 5/30', 'Join the Club', 'Future Meetups', 'Weekend Vibes'],
+    subtopics: ['May 30 Launch', 'Member Access', 'Community'],
+    color: 'bg-white text-black',
+    tag: '5/30 APP LAUNCH'
   }
 ];
 
@@ -232,9 +243,13 @@ export function BreakoutGrid() {
                     )}
                   </div>
                   
-                  <h3 className="text-3xl font-black uppercase mb-2 tracking-tight">
+                  <motion.h3 
+                    className="text-3xl font-black uppercase mb-2 tracking-tight origin-left"
+                    whileHover={{ scale: 1.05, x: 5 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                  >
                     {isLocked ? '???' : theme.title}
-                  </h3>
+                  </motion.h3>
                   
                   <motion.div
                     animate={{ opacity: 1 }}

@@ -21,24 +21,28 @@ export default function App() {
     <div className="min-h-screen p-4 md:p-8 lg:p-12 font-sans overflow-x-hidden bg-brand-yellow select-none" id="app-root">
       <div className="max-w-[1600px] mx-auto flex flex-col gap-12">
         {/* Header Section */}
-        <header className="flex flex-col md:flex-row md:items-end justify-between gap-8 pb-8 border-b-[6px] border-black" id="main-header">
-          <div className="flex flex-col gap-2">
-            <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-display font-black tracking-tighter leading-[1] md:leading-[0.8] uppercase italic drop-shadow-[4px_4px_0px_white] border-8 border-black bg-black text-brand-yellow px-6 py-2 brutal-shadow">
+        <header className="flex flex-col gap-8 pb-8 border-b-[6px] border-black" id="main-header">
+          <div className="w-full">
+            <h1 
+              className="text-5xl sm:text-7xl md:text-9xl lg:text-[11rem] xl:text-[13rem] font-display font-black tracking-tighter leading-[1] md:leading-[0.8] uppercase italic drop-shadow-[6px_6px_0px_white] border-8 border-black bg-black text-brand-yellow px-6 py-4 brutal-shadow w-full text-center md:text-left block"
+              style={{ WebkitTextStroke: '2px currentColor' }}
+            >
               Asian <span className="text-brand-orange">Networking</span>
             </h1>
           </div>
           
-          <div className="flex flex-col items-start md:items-end gap-1 font-black text-[12px] uppercase tracking-widest text-black">
-            <div className="flex items-center gap-2 bg-white border-4 border-black px-4 py-1 rounded-full brutal-shadow">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 font-black text-[12px] uppercase tracking-widest text-black">
+            <div className="flex items-center gap-2 bg-white border-4 border-black px-4 py-1 rounded-full brutal-shadow self-start">
               <Signal size={14} className="text-brand-orange" />
               <span>Event: 5.15 Happy Hour NYC</span>
             </div>
-            <div className="flex items-center justify-between w-full mt-2">
+            
+            <div className="flex items-center gap-6">
               <div className="flex items-center gap-2">
                 <span className="w-3 h-3 rounded-full bg-brand-orange animate-pulse border-2 border-black" />
                 <span>Room: Alpha-One</span>
               </div>
-              <div className="flex items-center gap-2 ml-4">
+              <div className="flex items-center gap-2">
                 <Users size={14} />
                 <span>{participants - 300} Ready</span>
               </div>
