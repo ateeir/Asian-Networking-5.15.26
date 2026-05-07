@@ -134,7 +134,8 @@ const BREAKOUT_THEMES = [
     groups: ['NYC Launch 5/30', 'Join the Club', 'Future Meetups', 'Weekend Vibes'],
     subtopics: ['May 30 Launch', 'Member Access', 'Partiful RSVP'],
     color: 'bg-white text-black',
-    tag: '5/30 APP LAUNCH'
+    tag: '5/30 APP LAUNCH',
+    link: 'https://partiful.com/e/skKm5mMoFjCMq0d0zylT'
   }
 ];
 
@@ -283,6 +284,16 @@ export function BreakoutGrid() {
                             <p className="text-lg font-bold leading-tight opacity-70 mb-6">{theme.description}</p>
                             
                             <div className="mt-auto flex flex-col gap-6">
+                              {theme.link && (
+                                <a 
+                                  href={theme.link} 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  className="w-full py-4 bg-brand-yellow text-black border-4 border-black font-black uppercase text-center brutal-shadow-sm hover:brutal-shadow transition-all active:scale-95 text-sm tracking-widest flex items-center justify-center gap-2"
+                                >
+                                  RSVP here! <Zap size={16} fill="black" />
+                                </a>
+                              )}
                               {theme.groups.length > 0 ? (
                                 <div className="grid grid-cols-2 gap-2">
                                   {theme.groups.map((group, i) => (
