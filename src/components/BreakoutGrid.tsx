@@ -130,9 +130,9 @@ const BREAKOUT_THEMES = [
     title: 'The Weekend Club',
     icon: '✨',
     description: 'Continue the conversation! meet up in the future.',
-    details: 'The conversation doesn\'t have to end here. The Weekend Club app is launching in New York on 5/30. Join to keep meeting awesome people!',
+    details: 'The conversation doesn\'t have to end here. The Weekend Club app is launching in New York on 5/30. Join to keep meeting awesome people! RSVP on our Partiful invite.',
     groups: ['NYC Launch 5/30', 'Join the Club', 'Future Meetups', 'Weekend Vibes'],
-    subtopics: ['May 30 Launch', 'Member Access', 'Community'],
+    subtopics: ['May 30 Launch', 'Member Access', 'Partiful RSVP'],
     color: 'bg-white text-black',
     tag: '5/30 APP LAUNCH'
   }

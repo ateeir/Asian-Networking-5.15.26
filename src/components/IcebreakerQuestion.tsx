@@ -39,7 +39,9 @@ export function IcebreakerQuestion() {
         key={index}
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="min-h-[180px] flex flex-col justify-center p-10 brutal-border-6 bg-white rounded-[40px] brutal-shadow-lg"
+        whileTap={{ scale: 0.98 }}
+        onClick={cycleQuestion}
+        className="min-h-[180px] flex flex-col justify-center p-10 brutal-border-6 bg-white rounded-[40px] brutal-shadow-lg cursor-pointer hover:bg-zinc-50 transition-colors"
       >
         <p className="text-xs font-black uppercase tracking-[0.2em] mb-4 text-indigo-600">Current Icebreaker Challenge</p>
         <p className="text-4xl font-black leading-tight italic text-black" id="icebreaker-text">
