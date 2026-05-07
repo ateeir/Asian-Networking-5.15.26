@@ -23,8 +23,8 @@ export default function App() {
         {/* Header Section */}
         <header className="flex flex-col md:flex-row md:items-end justify-between gap-8 pb-8 border-b-[6px] border-black" id="main-header">
           <div className="flex flex-col gap-2">
-            <h1 className="text-6xl md:text-9xl font-display font-black tracking-tighter leading-[0.8] uppercase italic drop-shadow-[4px_4px_0px_white] border-8 border-black bg-black text-brand-yellow px-6 py-2 brutal-shadow">
-              Asian<span className="text-brand-orange">Networking.</span>
+            <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-display font-black tracking-tighter leading-[1] md:leading-[0.8] uppercase italic drop-shadow-[4px_4px_0px_white] border-8 border-black bg-black text-brand-yellow px-6 py-2 brutal-shadow">
+              Asian <span className="text-brand-orange">Networking</span>
             </h1>
           </div>
           
